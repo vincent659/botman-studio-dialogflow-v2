@@ -1,8 +1,13 @@
 {
   "name": "vincechen/botman-studio-dialogflow-v2",
-  "description": "Dialogflow v2 botman middleware.",
-  "type": "composer-plugin",
+  "description": "Create messaging bots in PHP with ease with dialogflow 2 integration.",
   "license": "MIT",
+  "keywords": [
+    "Bot",
+    "BotMan",
+    "Chatbot"
+  ],
+  "homepage": "https://github.com/vincent659/botman-studio-dialogflow-v2",
   "authors": [
     {
       "name": "Vince",
