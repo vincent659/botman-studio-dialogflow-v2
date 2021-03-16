@@ -16,7 +16,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Botman\\Dialogflow2\\": "src/"
+      "Dialogflow2\\": "src/"
     }
   },
   "require": {}

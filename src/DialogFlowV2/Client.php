@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\Dialogflow2\DialogFlowV2;
+namespace Dialogflow2\DialogFlowV2;
 
 
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;

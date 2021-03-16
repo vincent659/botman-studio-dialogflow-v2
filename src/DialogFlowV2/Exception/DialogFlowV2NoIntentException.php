@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BotMan\Dialogflow2\DialogFlowV2\Exception;
+namespace Dialogflow2\DialogFlowV2\Exception;
 
 
 

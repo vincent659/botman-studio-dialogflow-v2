@@ -1,11 +1,11 @@
 <?php
 
-namespace BotMan\Dialogflow2;
+namespace Dialogflow2;
 
 use BotMan\BotMan\BotMan;
 use BotMan\BotMan\Interfaces\MiddlewareInterface;
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\Dialogflow2\DialogFlowV2\Client;
+use Dialogflow2\DialogFlowV2\Client;
 use Google\ApiCore\ApiException;
 
 class DialogFlowV2 implements MiddlewareInterface
