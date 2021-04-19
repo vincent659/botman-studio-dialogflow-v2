@@ -1,54 +1,29 @@
-<p align="center"><img height="188" width="198" src="https://botman.io/img/botman.png"></p>
-<h1 align="center">BotMan</h1>
+# BotMan DialogFlowV2 Middleware
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/botman/botman.svg?style=flat-square)](https://packagist.org/packages/botman/botman)
-[![Build Status](https://travis-ci.org/botman/botman.svg?branch=2.0)](https://travis-ci.org/botman/botman)
-[![codecov](https://codecov.io/gh/botman/botman/branch/master/graph/badge.svg)](https://codecov.io/gh/botman/botman)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/botman/botman/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/botman/botman/?branch=master)
-[![Packagist](https://img.shields.io/packagist/l/botman/botman.svg)]()
-[![StyleCI](https://styleci.io/repos/65017574/shield?branch=master)](https://styleci.io/repos/65017574)
-[![Slack](https://rauchg-slackin-jtdkltstsj.now.sh/badge.svg)](https://rauchg-slackin-jtdkltstsj.now.sh)
-[![Monthly Downloads](https://img.shields.io/packagist/dm/botman/botman.svg?style=flat-square)](https://packagist.org/packages/botman/botman)
+This Package is used to connect DialogFlowV2 with [BotMan](https://github.com/botman/botman). 
 
-[![https://phppackagedevelopment.com](https://display-demo.schlein.net/images/phppd.jpg)](https://phppackagedevelopment.com)
+It is a drop-in replacement for the v1 Middleware.
 
-If you want to learn how to create reusable PHP packages yourself, take a look at my upcoming [PHP Package Development](https://phppackagedevelopment.com) video course.
+It has been tested and is still working as of 2021 April.
 
-## About BotMan
+All credit to [@eclips16](https://github.com/eclips16) and others who helped for making the dialogflowv2 updates. Due to their work not on the packgist, I wanted to help others by putting his contribution on the packgists. The code was sourced from his [pull request](https://github.com/botman/botman/pull/1010).
 
-BotMan is a framework agnostic PHP library that is designed to simplify the task of developing innovative bots for multiple messaging platforms, including [Slack](https://slack.com), [Telegram](https://telegram.org), [Microsoft Bot Framework](https://dev.botframework.com), [Nexmo](https://www.nexmo.com), [HipChat](https://www.hipchat.com), [Facebook Messenger](https://www.messenger.com) and [WeChat](https://web.wechat.com).
+## Installation
+#### Composer
 
-```php
-$botman->hears('I want cross-platform bots with PHP!', function (BotMan $bot) {
-    $bot->reply('Look no further!');
-});
+```
+composer require vincechen/botman-studio-dialogflow-v2
 ```
 
-> If you want to learn how to create reusable PHP packages yourself, take a look at my upcoming [PHP Package Development](https://phppackagedevelopment.com) video course.
+## Usage
+### .env
+``` dotenv
+GOOGLE_CLOUD_PROJECT=project-id
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/security-file.json
+```
 
-## Documentation
-
-You can find the BotMan documentation at [https://botman.io](https://botman.io).
-
-## Support the development
-**Do you like this project? Support it by donating**
-
-- PayPal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=m%2epociot%40googlemail%2ecom&lc=CY&item_name=BotMan&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
-- Open Collective: [Become A Backer](https://opencollective.com/botman)
-- Patreon: [Become A Backer](https://www.patreon.com/botman)
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-[![0](https://sourcerer.io/fame/sergey48k/botman/botman/images/0)](https://sourcerer.io/fame/sergey48k/botman/botman/links/0)
-[![1](https://sourcerer.io/fame/sergey48k/botman/botman/images/1)](https://sourcerer.io/fame/sergey48k/botman/botman/links/1)
-[![2](https://sourcerer.io/fame/sergey48k/botman/botman/images/2)](https://sourcerer.io/fame/sergey48k/botman/botman/links/2)
-[![3](https://sourcerer.io/fame/sergey48k/botman/botman/images/3)](https://sourcerer.io/fame/sergey48k/botman/botman/links/3)
-[![4](https://sourcerer.io/fame/sergey48k/botman/botman/images/4)](https://sourcerer.io/fame/sergey48k/botman/botman/links/4)
-[![5](https://sourcerer.io/fame/sergey48k/botman/botman/images/5)](https://sourcerer.io/fame/sergey48k/botman/botman/links/5)
-[![6](https://sourcerer.io/fame/sergey48k/botman/botman/images/6)](https://sourcerer.io/fame/sergey48k/botman/botman/links/6)
-[![7](https://sourcerer.io/fame/sergey48k/botman/botman/images/7)](https://sourcerer.io/fame/sergey48k/botman/botman/links/7)
+### Where can I get these application credentials?
+- https://cloud.google.com/dialogflow/es/docs/quick/setup#windows
 
 ## Security Vulnerabilities
 
@@ -57,7 +32,5 @@ If you discover a security vulnerability within BotMan, please send an e-mail to
 ## License
 
 BotMan is free software distributed under the terms of the MIT license.
- 
- ## Credits
 
- User eclips16 (https://github.com/eclips16/botman/tree/dialogflow-api-v2) had made these updates. Due to his work not on the packgists, I wanted to help others by putting his contribution on the packgists.
+
