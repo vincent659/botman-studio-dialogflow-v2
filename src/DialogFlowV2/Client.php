@@ -119,7 +119,15 @@ class Client
         $queryParameters = $queryResult->getParameters();
         if (null !== $queryParameters) {
             foreach ($queryParameters->getFields() as $name => $field) {
-                $parameters[$name] = $field->getStringValue();
+                if (null !== $field->getListValue()) {
+                    $sub_problem = array();
+                    foreach ($field->getListValue()->getValues() as $list_name => $list_field) {
+                        array_push($sub_problem, $list_field->getStringValue());
+                    }
+                    $parameters[$name] = $sub_problem;
+                } else {
+                    $parameters[$name] = $field->getStringValue();
+                }
             }
         }
 
